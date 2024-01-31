@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Option_1 {
+    background-size: contain;
+}
+
+#Option_2 {
+    background-size: contain;
+}
+
+h1 {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+#result {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

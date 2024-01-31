@@ -1,0 +1,9 @@
+package com.select_food.main.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.select_food.main.model.RequestComponent;
+
+public interface RequestRepository extends JpaRepository<RequestComponent,Integer> {
+    
+}

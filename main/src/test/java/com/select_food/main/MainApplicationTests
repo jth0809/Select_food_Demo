@@ -1,0 +1,33 @@
+package com.select_food.main;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.select_food.main.model.RequestComponent;
+import com.select_food.main.repository.RequestRepository;
+
+@SpringBootTest
+class MainApplicationTests {
+	
+	@Autowired
+	private RequestRepository requestRepository;
+
+	@Test
+	void testJpa() {
+		RequestComponent r1 = new RequestComponent();
+		r1.setLatitude(1.0);
+		r1.setLongitude(2.0);
+		r1.setAllergy("allergy");
+		r1.setHabit("habit");
+		requestRepository.save(r1);
+
+		RequestComponent r2 = new RequestComponent();
+		r2.setLatitude(3.0);
+		r2.setLongitude(4.0);
+		r2.setAllergy("allergy2");
+		r2.setHabit("habit2");
+		requestRepository.save(r2);
+	}
+
+}
