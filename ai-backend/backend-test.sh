@@ -1,0 +1,1 @@
+curl -d '{"food_name":["허니점보윙","허니순살치면세트","교촌순살치밥세트","레드순살치밥세트"]}' -H "Content-Type: application/json" -k -X POST https://happytanuki.kr/ai/recommend_food
